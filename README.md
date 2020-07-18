@@ -1,23 +1,20 @@
-# node-emoji
+# node-emoji-with-skins
 
-[![NPM version (1.0.3)](https://img.shields.io/npm/v/node-emoji.svg?style=flat-square)](https://www.npmjs.com/package/node-emoji) [![NPM Downloads](https://img.shields.io/npm/dm/node-emoji.svg?style=flat-square)](https://www.npmjs.com/package/node-emoji) [![Build Status](https://img.shields.io/travis/omnidan/node-emoji/master.svg?style=flat-square)](https://travis-ci.org/omnidan/node-emoji) [![Dependencies](https://img.shields.io/david/omnidan/node-emoji.svg?style=flat-square)](https://david-dm.org/omnidan/node-emoji) [![https://paypal.me/DanielBugl/9](https://img.shields.io/badge/donate-paypal-yellow.svg?style=flat-square)](https://paypal.me/DanielBugl/9)
 
 _simple emoji support for node.js projects_
 
-![node-emoji example](https://i.imgur.com/yIo5Uux.png)
-
-**Help wanted:** We are looking for volunteers to maintain this project, if you are interested, feel free to contact me at [me@omnidan.net](mailto:me@omnidan.net)
+![node-emoji-with-skins example](https://i.imgur.com/yIo5Uux.png)
 
 ## Installation
-To install `node-emoji`, you need [node.js](http://nodejs.org/) and [npm](https://github.com/npm/npm#super-easy-install). :rocket:
+To install `node-emoji-with-skins`, you need [node.js](http://nodejs.org/) and [npm](https://github.com/npm/npm#super-easy-install). :rocket:
 
-Once you have that set-up, just run `npm install --save node-emoji` in your project directory. :ship:
+Once you have that set-up, just run `npm install --save node-emoji-with-skins` in your project directory. :ship:
 
 You're now ready to use emoji in your node projects! Awesome! :metal:
 
 ## Usage
 ```javascript
-var emoji = require('node-emoji')
+var emoji = require('node-emoji-with-skins')
 emoji.get('coffee') // returns the emoji code for coffee (displays emoji on terminals that support it)
 emoji.which(emoji.get('coffee')) // returns the string "coffee"
 emoji.get(':fast_forward:') // `.get` also supports github flavored markdown emoji (http://www.emoji-cheat-sheet.com/)
@@ -64,7 +61,7 @@ var emojified = emoji.emojify('I :unknown_emoji: :star: :another_one:', null, fo
 ```
 
 ## Adding new emoji
-Emoji come from js-emoji (Thanks a lot :thumbsup:). You can get a JSON file with all emoji here: https://raw.githubusercontent.com/omnidan/node-emoji/master/lib/emoji.json
+Emoji come from js-emoji (Thanks a lot :thumbsup:). You can get a JSON file with all emoji here: https://raw.githubusercontent.com/husmen73/node-emoji-with-skins/master/lib/emoji.json
 
 To update the list or add custom emoji, clone this repository and put them into `lib/emojifile.js`.
 Then run `npm run-script emojiparse` in the project directory or `node emojiparse` in the lib directory.
@@ -73,11 +70,7 @@ This should generate the new emoji.json file and output `Done.`.
 That's all, you now have more emoji you can use! :clap:
 
 ## Support / Donations
-If you want to support node-emoji development, please consider donating (it helps me keeping my projects active and alive!):
-
- * Paypal: [![daniel.bugl@gmail.com](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YBMS9EKTNPZHJ)
- * Bitcoin: [1J5eKsrAcPPLv5gPxSjSUkXnbJpkhndFgA](bitcoin:1J5eKsrAcPPLv5gPxSjSUkXnbJpkhndFgA)
-
+If you want to support node-emoji-with-skins development, please consider donating (it helps me keeping my projects active and alive!):
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fomnidan%2Fnode-emoji.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fomnidan%2Fnode-emoji?ref=badge_large)
